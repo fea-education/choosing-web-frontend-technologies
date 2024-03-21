@@ -4,49 +4,22 @@
 
 Identify different technical strategies and products, their strengths and weaknesses and produce a guide to help choosing a well fitting strategy and product for an aspired web frontend.
 
-## Historical Context
-
-https://www.epicweb.dev/the-webs-next-transition
-
-```
-// ChatGPT
-
-Early 2000s - Server-Side Rendering (SSR):
-
-Websites were primarily built using server-side rendering (SSR) technologies like PHP, ASP.NET, and Ruby on Rails.
-SSR involved generating HTML on the server and sending it to the client's browser.
-Advantages: Simple development process, good for SEO as search engines can easily index content.
-Disadvantages: Limited interactivity, slower page loads due to frequent server requests.
-Mid-2000s - Ajax and Dynamic Websites:
-
-The rise of Ajax (Asynchronous JavaScript and XML) allowed for more dynamic and interactive web experiences.
-Technologies like jQuery made it easier to implement Ajax functionality.
-Developers started building dynamic websites where content could be updated without refreshing the entire page.
-Advantages: Improved user experience, reduced server load as only portions of the page needed updating.
-Disadvantages: Complex codebase, potential for browser compatibility issues.
-Late 2000s to Early 2010s - Single Page Applications (SPAs):
-
-With the advent of frameworks like AngularJS, Backbone.js, and later React, developers shifted towards building SPAs.
-SPAs load a single HTML page and dynamically update content as the user interacts with the application.
-This approach provided a more desktop-like experience, with smoother transitions between pages.
-Advantages: Faster rendering, better user experience, easier code maintenance.
-Disadvantages: Initial load time can be slower, SEO challenges (though this has improved with server-side rendering for SPAs).
-Mid-2010s to Present - Progressive Web Apps (PWAs) and Micro Frontends:
-
-PWAs combine the best features of web and mobile apps, offering offline functionality, push notifications, and device hardware access.
-Technologies like Service Workers enable PWAs to cache content and provide a seamless offline experience.
-Micro frontends have emerged as a strategy to break down monolithic frontend codebases into smaller, more manageable pieces.
-Advantages: Improved performance, enhanced user engagement, scalability with micro frontends.
-Disadvantages: Complexity in implementation, browser support for newer features may vary.
-Throughout this evolution, developers have continually sought ways to enhance user experience, improve performance, and streamline development workflows. Each step forward has been driven by a combination of technological advancements, changing user expectations, and the need to overcome limitations of previous approaches.
-```
-
 ## Plan
 
-1. Summarize the historical context of web development and the strengths and weaknesses of every evolutionary step
+1. Summarize the historical context of web development
 2. Identify main goals that strategies and technologies should achieve
 3. Identify main strategies and architectures and representative technologies
 4. Establish measuring solutions for the goals
 5. Develop a small sample application for every chosen architecture/strategy
 6. Measure them against the identified goals
 7. Document the results
+
+## History
+
+Multi-Page Apps (MPAs) were the earliest architecture used on the web, relying on server-side rendering. As the web evolved, the need for more interactivity and improved user experience led to the transition over Progressively Enhanced Multi-Page Apps (PEMPAs, aka "JavaScript Sprinkles"), which relied on server-side rendering and client-side fetching of HTML (Ajax) to Single Page Apps (SPAs), which separated the UI code from the backend. SPAs only fetch data and render the HTML on the client side. However, SPAs have their own trade-offs, such as slower initial load times and SEO challenges. The next transition in web development architecture is currently underway, aiming to address the limitations of SPAs and MPAs.
+
+*(Source: [Kent C. Dodds - The Web’s Next Transition](https://www.epicweb.dev/the-webs-next-transition))*
+
+## Present
+
+Multiple solutions are in place that promise a compromise between SPAs and MPAs. On a high level a lot of them follow a similar strategy (e.g. SSR + Hydration) and aim to give the developer more control over which parts need to be interactive (and involve the usage of JavaScript) and which don't. Some of these solutions try to leverage the web platform and standards as much as possible, while others chose more custom and proprietary ways.
