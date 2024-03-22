@@ -6,8 +6,8 @@ Identify different technical strategies and products, their strengths and weakne
 
 ## Plan
 
-1. Summarize the historical context of web development
-2. Identify main goals that strategies and technologies should achieve
+1. [x] Summarize the historical context of web development
+2. [x] Identify main goals that strategies and technologies should achieve
 3. Identify main strategies and architectures and representative technologies
 4. Establish measuring solutions for the goals
 5. Develop a small sample application for every chosen architecture/strategy
@@ -23,3 +23,7 @@ Multi-Page Apps (MPAs) were the earliest architecture used on the web, relying o
 ## Present
 
 Multiple solutions are in place that promise a compromise between SPAs and MPAs. On a high level a lot of them follow a similar strategy (e.g. SSR + Hydration) and aim to give the developer more control over which parts need to be interactive (and involve the usage of JavaScript) and which don't. Some of these solutions try to leverage the web platform and standards as much as possible, while others chose more custom and proprietary ways.
+
+## Goals
+
+See [goals.md](docs/goals.md)
