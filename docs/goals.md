@@ -29,15 +29,27 @@ We won't look at all of these measurements in detail and might only add them to 
 
 While improving the performance can be a cost cutting operation, we'll look at it from the perspective of user satisfaction. Which means only metrics that influence the user experience directly will be looked at.
 
-- **Largest Contentful Paint (LCP)**: Measures the time it takes for the largest content element (e.g., image, text block) within the viewport to become visible to the user
-- **Cumulative Layout Shift (CLS)**: Measures the cumulative sum of all individual layout shift scores that occur during the entire lifespan of the page
-- **First Input Delay (FID)**: Measures the delay between the time when a user interacts with a page (e.g., clicks a button, taps on a link) and the time when the browser responds to that interaction
-- **Size of Network resources**
-- **Network request waterfall flatness**: Measures the number of requests that will be initiated once preceding requests were completed
-- **DOMContentLoaded**: ???
+### Largest Contentful Paint (LCP)
+
+Measures the time it takes for the largest content element (e.g., image, text block) within the viewport to become visible to the user
+
+### Cumulative Layout Shift (CLS)
+
+Measures the cumulative sum of all individual layout shift scores that occur during the entire lifespan of the page
+
+### First Input Delay (FID)
+
+Measures the delay between the time when a user interacts with a page (e.g., clicks a button, taps on a link) and the time when the browser responds to that interaction
+
+### Size of Network resources
+
+### Network request waterfall flatness
+
+Measures the number of requests that will be initiated once preceding requests were completed
 
 ### Research
 
+- DOMContentLoaded
 - Google Crux
 - Preloading images
 - webpagetest.org
